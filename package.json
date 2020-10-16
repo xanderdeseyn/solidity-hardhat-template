@@ -8,6 +8,7 @@
     "accounts": "yarn buidler accounts",
     "gen-types": "yarn buidler typechain",
     "compile": "yarn buidler compile && yarn buidler typechain",
+    "deploy": "yarn buidler run scripts/deploy.ts",
     "test": "yarn buidler test"
   },
   "devDependencies": {

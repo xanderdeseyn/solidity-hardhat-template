@@ -2,7 +2,7 @@
 // but useful for running the script in a standalone fashion through `node <script>`.
 // When running the script with `buidler run <script>` you'll find the Buidler
 // Runtime Environment's members available in the global scope.
-const bre = require("@nomiclabs/buidler");
+import { ethers } from "@nomiclabs/buidler";
 
 async function main() {
   // Buidler always runs the compile task when running scripts through it.
@@ -10,8 +10,7 @@ async function main() {
   // to make sure everything is compiled
   // await bre.run('compile');
 
-  // We get the contract to deploy
-  const Greeter = await bre.ethers.getContractFactory("Greeter");
+  const Greeter = await ethers.getContractFactory("Greeter");
   const greeter = await Greeter.deploy("Hello, Buidler!");
 
   await greeter.deployed();
@@ -19,8 +18,7 @@ async function main() {
   console.log("Greeter deployed to:", greeter.address);
 }
 
-// We recommend this pattern to be able to use async/await everywhere
-// and properly handle errors.
+// We recommend this pattern to be able to use async/await everywhere and properly handle errors.
 main()
   .then(() => process.exit(0))
   .catch((error) => {
