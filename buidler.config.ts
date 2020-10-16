@@ -28,6 +28,10 @@ const config: BuidlerConfig = {
   solc: {
     version: "0.7.3",
   },
+  typechain: {
+    outDir: "types",
+    target: "ethers-v5",
+  },
 };
 
 export default config;

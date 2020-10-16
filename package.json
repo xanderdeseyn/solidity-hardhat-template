@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "accounts": "yarn buidler accounts",
-    "compile": "yarn buidler compile",
+    "gen-types": "yarn buidler typechain",
+    "compile": "yarn buidler compile && yarn buidler typechain",
     "test": "yarn buidler test"
   },
   "devDependencies": {
