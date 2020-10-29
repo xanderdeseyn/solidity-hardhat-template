@@ -1,7 +1,5 @@
-import { task, usePlugin, BuidlerConfig } from "@nomiclabs/buidler/config";
-
-usePlugin("@nomiclabs/buidler-waffle");
-usePlugin("buidler-typechain");
+import { task, HardhatUserConfig } from "hardhat/config";
+import "@nomiclabs/hardhat-waffle";
 
 task("accounts", "Prints the list of accounts", async (taskArgs, bre) => {
   const accounts = await bre.ethers.getSigners();
@@ -18,15 +16,16 @@ task("accounts", "Prints the list of accounts", async (taskArgs, bre) => {
   }
 });
 
-// Go to https://buidler.dev/config/ to learn more
-const config: BuidlerConfig = {
+const config: HardhatUserConfig = {
   defaultNetwork: "localhost",
-  solc: {
-    version: "0.7.3",
-  },
-  typechain: {
-    outDir: "types",
-    target: "ethers-v5",
+  solidity: {
+    version: "0.7.4",
+    settings: {
+      optimizer: {
+        enabled: true,
+        runs: 1000,
+      },
+    },
   },
 };
 

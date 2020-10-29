@@ -4,6 +4,7 @@ bin
 #Buidler files
 cache
 artifacts
+types
 
 # Logs
 logs
