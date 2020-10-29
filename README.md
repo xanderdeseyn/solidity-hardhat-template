@@ -1,8 +1,8 @@
-## Solidity buidler template
+## Solidity hardhat template
 
 Stack:
 - Solidity
-- Buidler
+- Hardhat
 - Typescript (with Typechain)
 - Ethers
 - Waffle for testing
