@@ -1,5 +1,6 @@
 import { task, HardhatUserConfig } from "hardhat/config";
 import "@nomiclabs/hardhat-waffle";
+import "hardhat-watcher";
 
 task("accounts", "Prints the list of accounts", async (taskArgs, bre) => {
   const accounts = await bre.ethers.getSigners();
@@ -26,6 +27,10 @@ const config: HardhatUserConfig = {
         runs: 1000,
       },
     },
+  },
+  watcher: {
+    tasks: ["test"],
+    files: ["./contracts", "./test"],
   },
 };
 

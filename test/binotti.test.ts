@@ -3,8 +3,8 @@ import "@nomiclabs/hardhat-waffle";
 import { ethers } from "hardhat";
 import { Binotti } from "../types/Binotti";
 
-describe("Binotti", function() {
-  it("Should be able to mint and get balance", async function() {
+describe("Binotti", function () {
+  it("Should be able to mint and get balance", async function () {
     const provider = new ethers.providers.JsonRpcProvider();
     const signer1 = provider.getSigner(0);
     const signer2 = provider.getSigner(1);
