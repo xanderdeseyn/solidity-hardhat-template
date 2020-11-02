@@ -20,7 +20,7 @@
     "@types/mocha": "^8.0.3",
     "@types/node": "^14.14.3",
     "chai": "^4.2.0",
-    "ethereum-waffle": "^3.1.2",
+    "ethereum-waffle": "^3.2.0",
     "ethers": "^5.0.19",
     "hardhat": "^2.0.1",
     "hardhat-watcher": "^1.0.13",
