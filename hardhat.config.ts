@@ -29,8 +29,10 @@ const config: HardhatUserConfig = {
     },
   },
   watcher: {
-    tasks: ["test"],
-    files: ["./contracts", "./test"],
+    test: {
+      tasks: ["test"],
+      files: ["./contracts", "./test"],
+    },
   },
 };
 

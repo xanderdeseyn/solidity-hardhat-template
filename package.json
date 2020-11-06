@@ -11,7 +11,7 @@
     "compile": "yarn hardhat compile && yarn gen-types",
     "deploy": "yarn hardhat run scripts/deploy.ts",
     "test": "yarn hardhat test",
-    "watch": "yarn hardhat watch"
+    "watch": "yarn hardhat watch test"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.0",
@@ -23,14 +23,14 @@
     "ethereum-waffle": "^3.2.0",
     "ethers": "^5.0.19",
     "hardhat": "^2.0.1",
-    "hardhat-watcher": "^1.0.13",
+    "hardhat-watcher": "^2.0.0",
     "ts-node": "^9.0.0",
     "typescript": "^4.0.5"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^3.2.1-solc-0.7",
-    "@typechain/ethers-v5": "^2.0.0",
+    "@typechain/ethers-v5": "^3.0.0",
     "ts-generator": "^0.1.1",
-    "typechain": "^3.0.0"
+    "typechain": "^4.0.0"
   }
 }

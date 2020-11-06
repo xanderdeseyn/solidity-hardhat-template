@@ -648,12 +648,10 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@typechain/ethers-v5@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@typechain/ethers-v5/-/ethers-v5-2.0.0.tgz#cd3ca1590240d587ca301f4c029b67bfccd08810"
-  integrity sha512-0xdCkyGOzdqh4h5JSf+zoWx85IusEjDcPIwNEHP8mrWSnCae4rvrqB+/gtpdNfX7zjlFlZiMeePn2r63EI3Lrw==
-  dependencies:
-    ethers "^5.0.2"
+"@typechain/ethers-v5@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@typechain/ethers-v5/-/ethers-v5-3.0.0.tgz#584dcf3912257b8b9c785a92a51e70698e9187d9"
+  integrity sha512-hBYYsI2NMLbX7Y6PZWY0DvjfIwSC76aCN4LCUOZswFn6uUeXwQTouC8rYsQh5Kqx4OzRmSmOVA5pmWtvf0d0mQ==
 
 "@types/bn.js@*", "@types/bn.js@^4.11.3", "@types/bn.js@^4.11.5":
   version "4.11.6"
@@ -3033,7 +3031,7 @@ ethereumjs-wallet@0.6.5:
     utf8 "^3.0.0"
     uuid "^3.3.2"
 
-ethers@^5.0.0, ethers@^5.0.1, ethers@^5.0.2:
+ethers@^5.0.0, ethers@^5.0.1:
   version "5.0.17"
   resolved "https://registry.yarnpkg.com/ethers/-/ethers-5.0.17.tgz#35dea41f1d09d31f80e0bb4c03cb633cd6673756"
   integrity sha512-E0MrwCttHgdD6Irfa0B9cNdX0VoWVWLusaj51+EQalkl3pqhV2zGMPncfhYbc9+4nD2u81dbX8Pk9UN5kh/jew==
@@ -3658,10 +3656,10 @@ har-validator@~5.1.3:
     ajv "^6.12.3"
     har-schema "^2.0.0"
 
-hardhat-watcher@^1.0.13:
-  version "1.0.13"
-  resolved "https://registry.yarnpkg.com/hardhat-watcher/-/hardhat-watcher-1.0.13.tgz#ca67743607b3453db01abbc22e1452958714caf2"
-  integrity sha512-/UVcWa4g/7BPqqqjbMQUYWJiUzTeAXwIInby/6Uib8I4TbiJZIilMnizHAi6uUp1F7vaFaMSHgYFS38ZLgDNlg==
+hardhat-watcher@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/hardhat-watcher/-/hardhat-watcher-2.0.0.tgz#f9aa89565ced5f5c95919ee830e8c62b0de875e7"
+  integrity sha512-fdblFuPl0IctABaCTxrGnExdEfmLrt4Im1jCrYPTOgdKfTWcFC3n0+c0Q6vWDy+1rqyjMx6Fg4oXOvsDZfYvPQ==
   dependencies:
     chokidar "^3.4.3"
 
@@ -6687,10 +6685,10 @@ type@^2.0.0:
   resolved "https://registry.yarnpkg.com/type/-/type-2.1.0.tgz#9bdc22c648cf8cf86dd23d32336a41cfb6475e3f"
   integrity sha512-G9absDWvhAWCV2gmF1zKud3OyC61nZDwWvBL2DApaVFogI07CprggiQAOOjvp2NRjYWFzPyu7vwtDrQFq8jeSA==
 
-typechain@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/typechain/-/typechain-3.0.0.tgz#d5a47700831f238e43f7429b987b4bb54849b92e"
-  integrity sha512-ft4KVmiN3zH4JUFu2WJBrwfHeDf772Tt2d8bssDTo/YcckKW2D+OwFrHXRC6hJvO3mHjFQTihoMV6fJOi0Hngg==
+typechain@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/typechain/-/typechain-4.0.0.tgz#8a81fe40c4020b370f0c4671b7f966134d20c58c"
+  integrity sha512-XQUojf02bXyxXNGI0WeCphnh++5eWr9wYH8jm0XqHNv8yENpFrRyX8ffVlkhCnDOOB/jEJJVQytLAOU+Qn0N9Q==
   dependencies:
     command-line-args "^4.0.7"
     debug "^4.1.1"
