@@ -648,10 +648,10 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@typechain/ethers-v5@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@typechain/ethers-v5/-/ethers-v5-3.0.0.tgz#584dcf3912257b8b9c785a92a51e70698e9187d9"
-  integrity sha512-hBYYsI2NMLbX7Y6PZWY0DvjfIwSC76aCN4LCUOZswFn6uUeXwQTouC8rYsQh5Kqx4OzRmSmOVA5pmWtvf0d0mQ==
+"@typechain/ethers-v5@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@typechain/ethers-v5/-/ethers-v5-4.0.0.tgz#2a8be5e108d23f3b8e6354d1618fdc2abcb00b07"
+  integrity sha512-Rw4WHPIuwTXWcHfmn9ICQISQhmJa6Ug5IjqPYLpsKqlED2L4W2JgQ6S9hYt4IKVmT//1yxIxD+iaa5tSQEEx1A==
 
 "@types/bn.js@*", "@types/bn.js@^4.11.3", "@types/bn.js@^4.11.5":
   version "4.11.6"
@@ -682,10 +682,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/mocha@^8.0.3":
-  version "8.0.3"
-  resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-8.0.3.tgz#51b21b6acb6d1b923bbdc7725c38f9f455166402"
-  integrity sha512-vyxR57nv8NfcU0GZu8EUXZLTbCMupIUwy95LJ6lllN+JRPG25CwMHoB1q5xKh8YKhQnHYRAn4yW2yuHbf/5xgg==
+"@types/mocha@^8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-8.0.4.tgz#b840c2dce46bacf286e237bfb59a29e843399148"
+  integrity sha512-M4BwiTJjHmLq6kjON7ZoI2JMlBvpY3BYSdiP6s/qCT3jb1s9/DeJF0JELpAxiVSIxXDzfNKe+r7yedMIoLbknQ==
 
 "@types/node-fetch@^2.5.5":
   version "2.5.7"
@@ -3663,10 +3663,10 @@ hardhat-watcher@^2.0.0:
   dependencies:
     chokidar "^3.4.3"
 
-hardhat@^2.0.1:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/hardhat/-/hardhat-2.0.2.tgz#30c3c5a49f950aad2e39c479208b4132052dc735"
-  integrity sha512-P8SMYsWeC0OakmHUAgL9STalidQ1bAHFHFroPyvnfljei7EPHaIQpS6QursoZ+KVNkPTnKC+9m1Lky8nnKIjuw==
+hardhat@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/hardhat/-/hardhat-2.0.3.tgz#35e07060d9854d4182f201aeaa1c05316bd7e4d3"
+  integrity sha512-mDygAl+1qd5KBdXQBfc3R5XmC/rVdYYbEuOTSQY3rlncVu9gfockZVDsHtAMPw/FiBIRMApLcOceK7D1XQmHRw==
   dependencies:
     "@nomiclabs/ethereumjs-vm" "^4.1.1"
     "@sentry/node" "^5.18.1"
