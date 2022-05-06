@@ -1,12 +1,9 @@
 //SPDX-License-Identifier: Unlicense
-pragma solidity >=0.7.0;
+pragma solidity 0.8.7;
 
 import "hardhat/console.sol";
-import "@openzeppelin/contracts/math/SafeMath.sol";
 
 contract Binotti {
-    using SafeMath for uint256;
-
     mapping (address => uint) _balances;
     string _name;
     string _symbol;
@@ -21,7 +18,7 @@ contract Binotti {
     }
 
     receive() external payable {
-        _balances[msg.sender] = _balances[msg.sender].add(msg.value.mul(1000));
+        _balances[msg.sender] += msg.value * 1000;
     }
 
     function getBalance() public view returns (uint balance) {
@@ -34,17 +31,17 @@ contract Binotti {
 
     function transfer(address to, uint value) public {
         require(_balances[msg.sender] >= value);
-        _balances[msg.sender] = _balances[msg.sender].sub(value);
-        _balances[to] = _balances[to].add(value);
+        _balances[msg.sender] -= value;
+        _balances[to] += value;
     }
 
     function setName(string calldata newName) external  {
-        require(msg.sender == _owner);
+        require(msg.sender == _owner, "Sender is not owner");
         _name = newName;
     }
 
     function setSymbol(string calldata newSymbol) external {
-        require(msg.sender == _owner);
+        require(msg.sender == _owner, "Sender is not owner");
         _symbol = newSymbol;
     }
 

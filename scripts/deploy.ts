@@ -1,4 +1,4 @@
-import { ethers } from "@nomiclabs/buidler";
+import { ethers } from "hardhat";
 
 async function main() {
   const Binotti = await ethers.getContractFactory("Binotti");
